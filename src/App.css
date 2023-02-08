@@ -1,38 +1,52 @@
-.App {
+body {
+  background-color: black;
+  color: #00b800;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 1.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  width: 100%;
+  height: 250px;
+  background-color: #00b800;
+  margin-top: 1rem;
+  resize: none;
+  outline: none;
+  border: 3px solid black;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+textarea:disabled {
+    background-color: #a5a2a2;
+}
+
+button {
+  color: black;
+  background-color: #00b800;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 0.9rem 1.4rem;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+  border: none;
+  margin: 1rem;
+}
+
+button:hover {
+cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
 }
